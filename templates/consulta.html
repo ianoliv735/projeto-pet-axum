@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Consultas</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Pet-Agende</h1>
+            <div class="logo">
+                <img src="/static/img/Veterinario.jpg" alt="Veterinário e Pet" class="icon" />
+            </div>
+            <h1 class="slogan">Saúde e bem-estar do seu pet, com poucos cliques.</h1>
+            <div class="form-container">
+                <h2>Agendando Consulta...</h2>
+                <p class="descricao">
+                    Estamos preparados e empenhados para ajudar a cuidar do seu companheiro.
+                    Aqui você encontra profissionais capacitados e experientes para fazer o necessário ao bem-estar do seu Pet.
+                </p>
+                <form action="#" method="post" id="consultaForm">
+                    <label for="nome">Nome Completo*</label>
+                    <input id="nome" name="nome" type="text" placeholder="Nome Completo" required />
+                    
+                    <label for="cpf">CPF*</label>
+                    <input id="cpf" name="cpf" type="text" placeholder="CPF" required />
+                    
+                    <label for="celular">Celular*</label>
+                    <input id="celular" name="celular" type="text" placeholder="Celular" required />
+                    
+                    <label for="pet">Nome do Pet*</label>
+                    <input id="pet" name="pet" type="text" placeholder="Nome do Pet" required />
+                    
+                    <div class="especie">
+                        <span>Espécie*:</span>
+                        <label><input type="radio" name="especie" value="gato" required /> Gato</label>
+                        <label><input type="radio" name="especie" value="cachorro" /> Cachorro</label>
+                    </div>
+                    
+                    <label for="motivo">Motivo / Observações</label>
+                    <textarea id="motivo" name="motivo" placeholder="Motivo / Observações"></textarea>
+                    
+                    <div class="horario">
+                        <label for="data">Data*:</label>
+                        <input id="data" name="data" type="date" required />
+                        
+                        <label for="horario">Horário*:</label>
+                        <select id="horario" name="horario" required>
+                            <option value="">Selecione</option>
+                            <option value="08:00">08:00</option>
+                            <option value="08:30">08:30</option>
+                            <option value="09:00">09:00</option>
+                            <option value="09:30">09:30</option>
+                            <option value="10:00">10:00</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="button2">Agendar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

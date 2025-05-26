@@ -1,0 +1,18 @@
+[package]
+name = "projeto-pet-axum"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.7"
+tokio = { version = "1", features = ["full"] }
+tower-http = { version = "0.5", features = ["fs"] }
+serde = { version = "1.0", features = ["derive"] }
+axum-server = "0.7.2"
+rusqlite = { version = "0.27", features = ["bundled"] } 
+r2d2 = "0.8"
+r2d2_sqlite = "0.20"
+
+
+
+
